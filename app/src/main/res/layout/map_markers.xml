@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+				android:id="@+id/RelativeLayout1"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:orientation="vertical"
+				android:background="#ffcecece"
+				android:padding="6dp">
+
+
+	<ImageView
+		android:layout_width="match_parent"
+		android:layout_height="50dp"
+		android:id="@+id/flagElementMarker"
+		/>
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:padding="6dp"
+		android:overScrollMode="ifContentScrolls"
+		android:showDividers="end"
+		android:id="@+id/linearLayout"
+		android:layout_below="@+id/flagElementMarker"
+		android:layout_centerHorizontal="true"
+		android:background="#ff6c6c6c">
+
+		<HorizontalScrollView
+			android:layout_width="fill_parent"
+			android:layout_height="match_parent"
+			android:id="@+id/horizontalScrollView">
+
+			<TextView
+				android:id="@+id/latitude"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:shadowRadius="1"
+				android:textSize="15dp"
+				android:textStyle="bold"
+				android:text="lat:"
+				android:gravity="center|fill"
+				android:ellipsize="middle"
+				android:textColor="#ff0e0e0e"/>
+		</HorizontalScrollView>
+	</LinearLayout>
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:padding="6dp"
+		android:overScrollMode="ifContentScrolls"
+		android:showDividers="end"
+		android:id="@+id/linearLayout2"
+		android:layout_below="@+id/linearLayout"
+		android:layout_alignParentLeft="true"
+		android:layout_alignParentStart="true"
+		android:background="#ff6c6c6c">
+
+		<HorizontalScrollView
+			android:layout_width="fill_parent"
+			android:layout_height="match_parent"
+			android:id="@+id/horizontalScrollView2">
+
+			<TextView
+				android:id="@+id/longitude"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:shadowRadius="1"
+				android:textSize="15dp"
+				android:textStyle="bold"
+				android:text="lng:"
+				android:gravity="center|fill"
+				android:ellipsize="middle"
+				android:textColor="#ff0e0e0e"/>
+		</HorizontalScrollView>
+	</LinearLayout>
+
+</RelativeLayout>
